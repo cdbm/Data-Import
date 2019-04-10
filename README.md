@@ -1,6 +1,7 @@
 # Data-Import
 
-necessário para rodar o projeto: Python, Pip, Flask
+necessário para rodar o projeto: Python, Pip, Flask.
+
 para rodar:
 - clone o repositório
 - rode o comando pip install -r requirements.txt
