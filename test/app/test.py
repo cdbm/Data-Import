@@ -26,7 +26,7 @@ def upload():
         with open(destination) as f:
             data = json.load(f)
         print(data)
-    return render_template("complete.html", data=data)
+    return render_template("complete.html", data=data, filename=filename)
 
 if __name__ == "__main__":
     app.run( debug=True)

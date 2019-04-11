@@ -1,12 +1,23 @@
-    
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
+        <form id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+            <strong>Files:</strong><br>
+            <input id="file-picker" type="file" name="file" accept="application/json" multiple>
+            <div id="msg"></div>
+            <input type="submit" value="Import" id="upload-button">
+        </form>
+    <br>        
     Uploaded:
-    {{data}}
+    {{filename}}<br><br>
+    Name: {{data.Name}}<br>
+    Age: {{data.Age}}<br>
+    Flow: {{data.Flow}}<br><br><br>
+
+    Json Original: {{data}}
 </body>
 </html>
